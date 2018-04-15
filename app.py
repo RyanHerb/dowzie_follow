@@ -12,5 +12,5 @@ api = twitter.Api(consumer_key=consumer_key,
                   access_token_secret=access_secret)
 
 followers = api.GetFollowers()
-print(followers)
+print([f.screen_name for f in followers])
 
